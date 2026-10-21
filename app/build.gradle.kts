@@ -71,4 +71,9 @@ dependencies {
     implementation(libs.retrofit)
     implementation(libs.converter.gson)
     implementation(libs.logging.interceptor)
+
+    implementation(libs.maps.compose)
+    // Optional: Maps Compose Utilities (for marker clustering, etc.)
+    implementation(libs.maps.compose.utils)
+
 }
