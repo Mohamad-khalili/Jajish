@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:name=".JajishApp"
         android:allowBackup="true"
@@ -24,6 +26,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!--
+        To add your Maps API key to this project:
+            1. Create a file ./secrets.properties
+            2. Add this line, where YOUR_API_KEY is your API key:
+                MAPS_API_KEY=YOUR_API_KEY
+        -->
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyBMgfcnE3HseAQRKVMj9DMwwEVGAQjzqGo"/>
     </application>
 
 </manifest>
